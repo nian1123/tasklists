@@ -27,7 +27,7 @@ function showList(data,check) {
 						+"<img class='eaditImg "+ showEadit+"' src='dist/img/eadit.png'>"
 						+"<img class='closeImg "+ showClose+"' src='dist/img/close.png'>"
 						+"</div></section>";
-	$('#tasks-lists').append(listTemplate);
+	$('#tasks-lists').prepend(listTemplate);
 
 	$('.list').hover(function(){
 		$(this).css({"background":"#f4f4f4"})

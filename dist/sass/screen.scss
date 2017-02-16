@@ -1,0 +1,79 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/support","compass/css3","variable","mixin";
+
+.tasksList-container {
+	// @debug browsers();
+	color: $base-color;
+	font: {
+		family: $main-font-family;
+		size: $normal-font-size;
+	}
+	.title {
+		color: $main-color;
+		margin: 20px 0;
+		@include display-flex;
+		@include flex-direction(row);
+		@include justify-content(center);
+		font: {
+			size:$title-font-size;
+			weight: bold;
+		}
+	}
+	.submit-btn {
+		padding: 0;
+		& button.btn{
+			background-color: $main-color;
+			color: white;
+		} 
+	}
+	@include screen(0,576px) {
+		.submit-btn {
+			display: none;
+		}
+		.form-group {
+			margin-bottom: 0;
+		}
+	}
+	
+	.task-lists {
+		margin: 20px 0;
+
+		// section.list {
+		//     position: relative;
+		//     height: $list-height;
+		//     border-bottom: 1px solid $hover-back-color;
+		//     &:hover {
+		//         background-color: $hover-back-color;
+		//     }
+		//     .list-content {
+		//         .checkbox {
+		//             @include position(($list-height - 13)/2, none, none, 20px);
+		//         }
+		//         .task-text {
+		//             padding: 0 33px;
+		//             line-height: $list-height;
+		//             background: transparent;
+		//             border: none;
+		//         }
+		//     }
+		//     .eaditImg {
+		//         width: $img-width;
+		//         height: $img-height;
+		//         @include position(($list-height - $img-height)/2, 15px, none, none);
+		//         margin: 0 5px;
+		//         display: inline-block;
+		//     }
+		//     .closeImg {
+		//         @extend .eaditImg;
+		//         display: none;
+		//     }
+		// }
+
+
+	}
+}
+

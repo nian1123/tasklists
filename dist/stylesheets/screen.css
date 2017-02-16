@@ -1,0 +1,46 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 8, ../sass/screen.scss */
+.tasksList-container {
+  color: #222;
+  font-family: -apple-system, SF UI Text, Arial, PingFang SC, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
+  font-size: 14px;
+}
+/* line 15, ../sass/screen.scss */
+.tasksList-container .title {
+  color: #0da4ef;
+  margin: 20px 0;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: center;
+  justify-content: center;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+/* line 26, ../sass/screen.scss */
+.tasksList-container .submit-btn {
+  padding: 0;
+}
+/* line 28, ../sass/screen.scss */
+.tasksList-container .submit-btn button.btn {
+  background-color: #0da4ef;
+  color: white;
+}
+@media screen and (min-width: 0) and (max-width: 576px) {
+  /* line 34, ../sass/screen.scss */
+  .tasksList-container .submit-btn {
+    display: none;
+  }
+  /* line 37, ../sass/screen.scss */
+  .tasksList-container .form-group {
+    margin-bottom: 0;
+  }
+}
+/* line 42, ../sass/screen.scss */
+.tasksList-container .task-lists {
+  margin: 20px 0;
+}

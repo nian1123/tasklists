@@ -1,35 +1,48 @@
 <!DOCTYPE html>
 <html lang="zh">
+
 <head>
-	<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>My taskList</title>
-	<link rel="stylesheet" type="text/css" href="css/list.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="dist/stylesheets/screen.css">
 </head>
+
 <body>
-	<section class="container">
-		<div class="tasks">
-			<h2 class="title">我的Todo</h2>
-			<div id="tasks-lists">
-				<form class="input-list">
-					<input type="text" name="taskInput" id="taskInput" />
-					<button type="submit">确定 </button>
-				</form>
-			</div>
-			<div class="lists">
-			</div>
-		</div>
-		
-	</section>
-	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-	<script type="text/javascript" src="node_modules/store/store.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
-	<script type="text/javascript" src="js/load-list.js"></script>
-	<script type="text/javascript" src="js/event-listener.js"></script>
-	<script type="text/javascript" src="js/toggle.js"></script>
-	
+    <div class="tasksList-container container-fluid">
+      <div class="title">我的Todo</div>
+      <div class="row">
+        <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+            <form class=" form-inline row input-list">
+              <div class="form-group col-sm-11">
+                <input type="text" class="col-sm-12 form-control" name="taskInput" id="taskInput" placeholder="輸入任務内容">
+              </div>
+              <div class="submit-btn col-sm-1  ">
+                <button type="submit" class="btn float-sm-right">確定</button>
+              </div>
+            </form>
+
+            <div class="task-lists " id="tasks-lists">
+            </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="node_modules/store/store.js"></script>
+    <script type="text/javascript" src="dist/js/main.js"></script>
+    <script type="text/javascript" src="dist/js/load-list.js"></script>
+    <script type="text/javascript" src="dist/js/event-listener.js"></script>
+    <script type="text/javascript" src="dist/js/toggle.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="dist/stylesheets/list.css"> -->
+
 </body>
 
 </html>
